@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lifecycleMappingMetadata>
+	
+
+	<pluginExecutions>
+		<pluginExecution>
+
+			<pluginExecutionFilter>
+				 <groupId>com.messerleassoc</groupId>
+  				<artifactId>maven-file-concatenator</artifactId>
+				<goals>
+					<goal>processFiles</goal>
+				</goals>
+				<versionRange>[0.0.1,)</versionRange>
+			</pluginExecutionFilter>
+			<action>
+				<execute>
+					<runOnIncremental>true</runOnIncremental>
+				</execute>
+			</action>
+		</pluginExecution>
+		<pluginExecution>
+
+
+
+		</pluginExecution>
+
+	</pluginExecutions>
+
+</lifecycleMappingMetadata>
+    
+    
