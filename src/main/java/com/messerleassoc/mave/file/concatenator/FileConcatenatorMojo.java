@@ -63,7 +63,7 @@ public class FileConcatenatorMojo extends AbstractMojo {
 	/**
 	 * Output Directory
 	 */
-	@Parameter(defaultValue = "${project.build.directory}/genereted-resouces") 
+	@Parameter(defaultValue = "${project.build.directory}/genereted-resouces/scripts") 
 	private File outputDirectory;
 	
 	
