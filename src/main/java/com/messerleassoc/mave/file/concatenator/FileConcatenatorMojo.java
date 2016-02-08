@@ -40,6 +40,9 @@ public class FileConcatenatorMojo extends AbstractMojo {
 	private MavenProject project;
 	
 	
+	/**
+	 * Build Context
+	 */
 	@Component
 	private BuildContext buildContext;
 	
@@ -49,6 +52,13 @@ public class FileConcatenatorMojo extends AbstractMojo {
 	 */
 	@Parameter(readonly=true, required=true)
 	private List<String> scriptList;
+	
+	/**
+	 * Name of the output script
+	 */
+	@Parameter(readonly=true,required=true)
+	private String outputScriptName;
+	
 	
 	/**
 	 * Output Directory
@@ -69,10 +79,16 @@ public class FileConcatenatorMojo extends AbstractMojo {
 		}
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		buildContext.refresh(this.getOutputDirectory());
-		
-		
-		
 		
 	}
 
@@ -86,14 +102,13 @@ public class FileConcatenatorMojo extends AbstractMojo {
 
 
 	/**
-	 * @param outputDirectory the outputDirectory to set
+	 * @return the outputScriptName
 	 */
-	public final void setOutputDirectory(File outputDirectory) {
-		this.outputDirectory = outputDirectory;
+	public final String getOutputScriptName() {
+		return outputScriptName;
 	}
-	
-	
-	
+
+
 	
 	
 	
