@@ -12,7 +12,10 @@
 		<java.compiler.version>1.7</java.compiler.version>
 		<maven.version>3.0</maven.version>
 
-
+		<!-- Plexus component versions -->
+		<plexus.compiler.api.version>2.5</plexus.compiler.api.version>
+		<plexus.utils.version>3.0.22</plexus.utils.version>
+		<plexus.build.api.version>0.0.7</plexus.build.api.version>
 	</properties>
 
 
@@ -43,11 +46,22 @@
 			<version>${maven.version}</version>
 		</dependency>
 
-
-
-
-
-
+		<!-- Plexus components dependencies -->
+		<dependency>
+			<groupId>org.codehaus.plexus</groupId>
+			<artifactId>plexus-compiler-api</artifactId>
+			<version>${plexus.compiler.api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.plexus</groupId>
+			<artifactId>plexus-utils</artifactId>
+			<version>${plexus.utils.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.sonatype.plexus</groupId>
+			<artifactId>plexus-build-api</artifactId>
+			<version>${plexus.build.api.version}</version>
+		</dependency>
 
 	</dependencies>
 
